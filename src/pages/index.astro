@@ -1,12 +1,9 @@
-astro
+ astro
   ---
   const tools = [
-    { name: "LogoGenius IA", desc: "Créez des logos pros en 2min", link:
-  "#", price: "Gratuit/Payant" },
-    { name: "WriteFlow", desc: "Rédacteur d'articles SEO automatique",
-  link: "#", price: "19€/mois" },
-    { name: "TaskMaster AI", desc: "Organisation de projets pour
-  freelance", link: "#", price: "Gratuit" },
+    { name: "LogoGenius IA", desc: "Créez des logos pros en 2min", link: "#", price: "Gratuit/Payant" },
+    { name: "WriteFlow", desc: "Rédacteur d'articles SEO automatique", link: "#", price: "19€/mois" },
+    { name: "TaskMaster AI", desc: "Organisation de projets pour freelance", link: "#", price: "Gratuit" },
   ];
   ---
   <html lang="fr">
@@ -14,34 +11,23 @@ astro
     <meta charset="utf-8" />
     <title>AI Freelance Hub - Les Meilleurs Outils IA</title>
     <style>
-      body { font-family: sans-serif; background: #f4f7f6; color: #333;
-  margin: 0; padding: 0; }
-      header { background: #1a1a1a; color: white; padding: 2rem;
-  text-align: center; }
-      .container { max-width: 1000px; margin: 2rem auto; padding: 0
-  1rem; }
-      .grid { display: grid; grid-template-columns: repeat(auto-fit,
-  minmax(300px, 1fr)); gap: 1.5rem; }
-      .card { background: white; padding: 1.5rem; border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: 0.3s; }
+      body { font-family: sans-serif; background: #f4f7f6; color: #333; margin: 0; padding: 0; }
+      header { background: #1a1a1a; color: white; padding: 2rem; text-align: center; }
+      .container { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
+      .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+      .card { background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: 0.3s; }
       .card:hover { transform: translateY(-5px); }
-      .btn { display: inline-block; background: #0070f3; color: white;
-  padding: 0.8rem 1.2rem; text-decoration: none; border-radius: 6px;
+      .btn { display: inline-block; background: #0070f3; color: white; padding: 0.8rem 1.2rem; text-decoration: none; border-radius: 6px;
   font-weight: bold; }
     </style>
   </head>
   <body>
     <header>
       <h1>🚀 AI Freelance Hub</h1>
-      <p>L'annuaire automatisé des outils IA pour booster votre
-  business</p>
+      <p>L'annuaire automatisé des outils IA pour booster votre business</p>
     </header>
     <div class="container">
       <div class="grid">
-        {tools.map(tool => (
-          <div class="card">
-            <h2>{tool.name}</h2>
-            <p>{tool.desc}</p>
         {tools.map(tool => (
           <div class="card">
             <h2>{tool.name}</h2>
